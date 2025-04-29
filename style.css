@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+}
+h2, footer, main li{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #6495ED;
+}
+ul{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+/*ここからヘッダー*/
+header img{
+    height: 60px;
+    aspect-ratio: 2.5/1;
+    margin: 10px;
+}
+header{
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    /*なんでfixedにしたらmainが上にいってしまうの！！それ直せば終わり*/
+}
+header img, nav{
+    display: inline-block;
+}
+header>a, li{
+    vertical-align: middle;
+}
+.inline-nav li{
+    display: inline-block;
+}
+.spacer{
+    width: calc(100% - 200px - 208px);
+    display: inline-block;
+}
+.inline-nav li{
+    margin-left: 15px;
+}
+
+/*以下main*/
+main{
+    min-height: 800px;
+    max-width: 100%;
+    margin: 0 20px;
+    position: relative;
+    top: 100px;
+    clear: both;
+}
+main img{
+    width: 550px;
+    aspect-ratio: 1.7/1;
+}
+.float-left{
+    float: left;
+}
+.float-left img{
+    margin-right: 50px;
+}
+.float-right{
+    float: right;
+}
+.float-right img{
+    margin-left: 50px;
+}
+
+
+
+/*ここからはfooter*/
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+hr{
+    margin: 10px auto;
+    width: 85%;
+}
+
+/*ここからはhoverの設定*/
+li :hover{
+    opacity: 0.5;
+}
+#current-page{
+    color: green;
+}
+
+/*button設定
+#back-to-top{
+    position: fixed;
+    top: 82vh;
+    left: 92vw;
+}
+#back-to-top img{
+    height: 50px;
+    aspect-ratio: 1/1;
+}*/
